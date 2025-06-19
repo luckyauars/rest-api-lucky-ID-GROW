@@ -119,7 +119,7 @@ Authorization: Bearer yourapitoken
 
 📩 Koleksi Postman: [lukky.postman_collection.json](https://github.com/luckyauars/rest-api-lucky-ID-GROW/blob/main/lukky.postman_collection.json)
 
-📄 Dokumentasi Lengkap (Word): [API_Documentation_Laravel_Inventory.docx](https://github.com/luckyauars/rest-api-lucky-ID-GROW/blob/main/API_Documentation_Laravel_Inventory.docx)
+📄 Dokumentasi Lengkap (PDF): [REST-API_Dokumentasi_Laravel](https://drive.google.com/file/d/1ygcpMbgCtZOmo2Hb6vikE2NaAtxJe9JW/view?usp=sharing)
 
 ---
 
@@ -145,5 +145,3 @@ docker run -p 8000:8000 laravel-inventory
 Untuk dokumentasi tambahan dan file-file pendukung lainnya, silakan akses melalui tautan Google Drive berikut:
 
 - 📂 [Folder Dokumentasi Project (Google Drive)](https://drive.google.com/drive/folders/1WLzC6AdkOGgffdrvLLl3W61DQB5n7UGr?usp=sharing)
-
-- 📄 [Dokumentasi REST API - PDF](https://drive.google.com/file/d/1ygcpMbgCtZOmo2Hb6vikE2NaAtxJe9JW/view?usp=sharing)
