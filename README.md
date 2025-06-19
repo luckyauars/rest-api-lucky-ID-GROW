@@ -56,12 +56,6 @@ php artisan key:generate
 php artisan migrate
 ```
 
-(Opsional) Jalankan seeder:
-
-```bash
-php artisan db:seed
-```
-
 ### 5. Jalankan Server Lokal
 
 ```bash
