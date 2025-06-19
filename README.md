@@ -117,7 +117,7 @@ Authorization: Bearer yourapitoken
 
 ## 📚 Dokumentasi API
 
-📩 Koleksi Postman: [lukky.postman_collection.json](https://github.com/luckyauars/rest-api-lucky-ID-GROW/blob/main/lukky.postman_collection.json)
+📩 Koleksi Postman: [Lucky-REST-API.postman.collection.json](https://github.com/luckyauars/rest-api-lucky-ID-GROW/blob/main/lucky.postman-ID-GROW%20by%20PT.%20Clavata%20Extra%20Sukses.json)
 
 📄 Dokumentasi Lengkap (PDF): [REST-API_Dokumentasi_Laravel](https://drive.google.com/file/d/1ygcpMbgCtZOmo2Hb6vikE2NaAtxJe9JW/view?usp=sharing)
 
