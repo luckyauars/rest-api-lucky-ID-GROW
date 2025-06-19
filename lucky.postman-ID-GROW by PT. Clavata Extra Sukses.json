@@ -1,0 +1,878 @@
+{
+	"info": {
+		"_postman_id": "8bdc85e8-1e41-479d-a2b1-68109e229f2c",
+		"name": "lukky",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3739031"
+	},
+	"item": [
+		{
+			"name": "registeruser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test2#@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "lucky\n",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "lucky@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Lucky12#@gmail.commm",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mutasi per produk",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|1oWnajgTnzWezIQLYuk8fyIlkUsnodJrtvahTdiic9e07f59",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/mutasi/produk/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mutasi",
+						"produk",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mutasi per user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|1oWnajgTnzWezIQLYuk8fyIlkUsnodJrtvahTdiic9e07f59",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/mutasi/user/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mutasi",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ambil data produk",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|WTBejazlS7korNxUf4cstm8kKn0dEPZHk9ND5Y2Td8067674",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/produk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"produk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert produk",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|kX42cDlefuqLNkeFISWRTbYJKHSmiPkz46HOVaY3e23cb2ba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama_produk",
+							"value": "baju-xl",
+							"type": "text"
+						},
+						{
+							"key": "kode_produk",
+							"value": "b002",
+							"type": "text"
+						},
+						{
+							"key": "kategori",
+							"value": "pakaian",
+							"type": "text"
+						},
+						{
+							"key": "satuan",
+							"value": "pcs",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/produk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"produk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update produk",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|itUjhtIeE5KtcY0URmeP1M0VAGb96NRtU5G0ap1Ta0e7e5e4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama_produk",
+							"value": "baju-xl",
+							"type": "text"
+						},
+						{
+							"key": "kode_produk",
+							"value": "b002",
+							"type": "text"
+						},
+						{
+							"key": "kategori",
+							"value": "pakaian",
+							"type": "text"
+						},
+						{
+							"key": "satuan",
+							"value": "pcs",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/produk/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"produk",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delated produk Copy",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|WTBejazlS7korNxUf4cstm8kKn0dEPZHk9ND5Y2Td8067674",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/produk/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"produk",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mutasi",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3|WTBejazlS7korNxUf4cstm8kKn0dEPZHk9ND5Y2Td8067674",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mutasi",
+							"value": "",
+							"description": "mutasicontoh",
+							"type": "text"
+						},
+						{
+							"key": "lokasi",
+							"value": "",
+							"description": "rumah",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/mutasi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mutasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mutasi masuk & keluar",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|itUjhtIeE5KtcY0URmeP1M0VAGb96NRtU5G0ap1Ta0e7e5e4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "produk_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "lokasi_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "jenis_mutasi",
+							"value": "masuk",
+							"type": "text"
+						},
+						{
+							"key": "jumlah",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/mutasi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mutasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update mutasi",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|itUjhtIeE5KtcY0URmeP1M0VAGb96NRtU5G0ap1Ta0e7e5e4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tanggal",
+							"value": "2025-05-15",
+							"type": "text"
+						},
+						{
+							"key": "jenis_mutasi",
+							"value": "celanaaa",
+							"type": "text"
+						},
+						{
+							"key": "jumlah",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "produk_id",
+							"value": "01",
+							"type": "text"
+						},
+						{
+							"key": "lokasi_id",
+							"value": "01",
+							"type": "text"
+						},
+						{
+							"key": "keterangan",
+							"value": "celana 10",
+							"type": "text"
+						},
+						{
+							"key": "jenis_mutasi",
+							"value": "keluar ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/mutasi/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mutasi",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hapus mutasi",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|itUjhtIeE5KtcY0URmeP1M0VAGb96NRtU5G0ap1Ta0e7e5e4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/mutasi/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mutasi",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lokasi",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|itUjhtIeE5KtcY0URmeP1M0VAGb96NRtU5G0ap1Ta0e7e5e4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/lokasi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lokasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lokasi baru",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|itUjhtIeE5KtcY0URmeP1M0VAGb96NRtU5G0ap1Ta0e7e5e4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "kode_lokasi",
+							"value": "0003",
+							"type": "text"
+						},
+						{
+							"key": "nama_lokasi",
+							"value": "klojen",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/lokasi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lokasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update lokasi",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|itUjhtIeE5KtcY0URmeP1M0VAGb96NRtU5G0ap1Ta0e7e5e4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "kode_lokasi",
+							"value": "0003",
+							"type": "text"
+						},
+						{
+							"key": "nama_lokasi",
+							"value": "klojensz",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/lokasi/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lokasi",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hapus lokasi",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|itUjhtIeE5KtcY0URmeP1M0VAGb96NRtU5G0ap1Ta0e7e5e4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/lokasi/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lokasi",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://rest.vidi.my.id/api/register?email=coba@gmail.com&password=coba@gmail.com&name=coba",
+					"protocol": "https",
+					"host": [
+						"rest",
+						"vidi",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "coba@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "coba@gmail.com"
+						},
+						{
+							"key": "name",
+							"value": "coba"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
